@@ -15,6 +15,7 @@
   --bg-color: black;
   --primary-color: white;
   --main-color: blue;
+  --light-bg-color: rgb(87, 84, 84);
 }
 
 html {
@@ -181,4 +182,40 @@ line-height: 1.2;
 .about-content p{
     font-size: 2.6rem;
     margin: 2rem 0rem 3rem;
+}
+
+/* services  */
+.services h2{
+    margin-bottom: 5rem;
+}
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.services-container .ser-box{
+    flex: 1 1 30rem;
+    background: var(--light-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5 ease;
+}
+.services-container .ser-box:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+.ser-box i {
+    font-size: 6rem;
+    color: var(--main-color);
+}
+.ser-box h3{
+    font-size: 2.5rem;
+}
+.ser-box p{
+    font-size: 1.5rem;
+    margin: 1rem 0rem 3rem;
 }

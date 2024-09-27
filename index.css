@@ -61,7 +61,7 @@ section {
 }
 .navbar a:hover,
 .navbar a.active {
-  color: var(--primary-color);
+  color: var(--main-color);
 }
 
 #menu-bar {
@@ -393,6 +393,20 @@ span {
   #menu-bar {
     display: block;
   }
+  .navbar {
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--bg-color);
+    border-top: .1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+    display: none;
+}
+.navbar .active{
+    display: block;
+}
   .home {
     flex-direction: column;
   }
